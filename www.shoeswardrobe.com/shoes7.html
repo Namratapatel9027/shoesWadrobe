@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>All Products - ShoesWardrobe</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body id="body1">
+        
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png" width="125px"></a>
+            
+            </div>
+           <nav>
+                <ul id="MenuItems">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about_us_page.html">About</a></li>
+                <li><a href="contact_us_page.html">Contact</a></li>
+                <li><a href="account_page_new.html">Account</a></li>
+                </ul>
+            </nav>
+                <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+       </div>
+
+
+<!------single product details------>   
+    
+    <div class="small-container single-product">
+        <div class="row">
+            <div class="col-2">
+                <img src="images/nike8-removebg-preview.png" width="100%" id="ProductImg">
+            
+                
+                
+            </div>
+            <div class="col-2">
+                <h1>Nike Air Max</h1>
+                <h4 style="color: white">₹7999</h4>
+           
+                <a href=""class="btn">Add To Cart</a>
+                
+                <h3>Product Details</h3>
+                <br>
+                <p>Nike is synonymous with quality, and we only offer authentic Nike shoes directly from the brand. Each product undergoes rigorous quality checks to ensure that you receive the genuine article, crafted with precision and utilizing the latest technologies for optimal performance.</p>
+            </div>
+        </div>
+    <div>
+        
+
+<!-----------------------js for toggle menu-------->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        
+        MenuItems.style.maxHeight = "0px";
+        
+        function menutoggle(){
+            if(MenuItems.style.maxHeight == "0px")
+                {
+                    MenuItems.style.maxHeight = "200px"
+                }
+            else
+                {
+                    MenuItems.style.maxHeight = "0px"
+                }
+        }
+    </script>
+        
+<!------------------js for product gallery-------------->
+        
+    <script>
+        var ProductImg = document.getElementById("ProductImg");
+        var SmallImg = document.getElementsByClassName("small-img");
+        
+            SmallImg[0].onclick = function()
+            {
+                ProductImg.src = SmallImg[0].src;
+            }
+            SmallImg[1].onclick = function()
+            {
+                ProductImg.src = SmallImg[1].src;
+            }
+            SmallImg[2].onclick = function()
+            {
+                ProductImg.src = SmallImg[2].src;
+            }
+            SmallImg[3].onclick = function()
+            {
+                ProductImg.src = SmallImg[3].src;
+            }
+        
+        
+        </script>
+        
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

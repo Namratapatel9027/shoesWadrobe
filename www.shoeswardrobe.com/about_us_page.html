@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>About Us</title>
+</head>
+<body>
+    <style>
+       
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+            background: #111931;
+        }
+        .wrapper{
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .background-container{
+            width: 100%;
+            min-height: 100vh;
+            display: flex; 
+        }
+        .bg-1{
+            flex: 1;
+            background-color: #111931;
+        }
+        .bg-2{
+            flex: 1;
+            background-color: #111931;
+        }
+        .about-container{
+            width: 85%;
+            min-height: 80vh;
+            position: absolute;
+            background-color: #111931;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px 40px;
+           
+        }
+        .image-container{
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .image-container img {
+            width: 500px;
+            height: 500px;
+            margin: 20px;
+        }
+        .text-container{
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+            font-size: 22px;
+        }
+        .text-container h1{
+            font-size: 70px;
+            padding: 20px 0px;
+        }
+        .text-container a{
+            text-decoration: none;
+            padding: 12px;
+            margin: 50px 0px;
+            background-color: #EAD72D;
+            border: 2px solid transparent;
+            color: white;
+         
+            transition: .3s all ease;
+        }
+        .text-container a:hover{
+            background-color: transparent;
+            color: black;
+            border: 2px solid rebeccapurple;
+        }
+        @media screen and (max-width: 1600px){
+            .about-container{
+                width: 90%;
+            }
+            .image-container img{
+                width: 400px;
+                height: 400px;
+            }
+            .text-container h1{
+                font-size: 50px;
+            }
+        }
+        @media screen and (max-width: 1100px){
+            .about-container{
+                flex-direction: column;
+            }
+            .image-container img{
+                width: 300px;
+                height: 300px;
+            }
+            .text-container {
+                align-items: center;
+            }
+        }
+    </style>
+    <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png" width="125px"></a>
+            
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about_us_page.html">About</a></li>
+                    <li><a href="contact_us_page.html">Contact</a></li>
+                    <li><a href="account_page_new.html">Account</a></li>
+                    
+                </ul>
+            </nav>
+            <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+    <div class="wrapper">
+
+        <div class="background-container">
+            <div class="bg-1"></div>
+            <div class="bg-2"></div>
+    
+        </div>
+        <div class="about-container">
+            
+            <div class="image-container">
+                <img src="./images/image1.png" alt="">
+                
+            </div>
+
+            <div class="text-container">
+                <h1 style="color: white">About us</h1>
+                <h5 style="color: white" >At Shoes Collection, we are passionate about footwear and believe that the right pair of shoes can make a world of difference. Whether you're looking for stylish sneakers, elegant heels, comfortable flats, or durable boots, we've got you covered.
+
+                Our Mission:
+                Our mission is to provide our customers with a wide range of high-quality shoes that combine style, comfort, and durability. We carefully curate our collection to ensure that every pair of shoes we offer meets our strict standards of craftsmanship and design.
+
+                
+</h5>
+              
+            </div>
+            
+        </div>
+    </div>
+    
+
+</body>
+</html>

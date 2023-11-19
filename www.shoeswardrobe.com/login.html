@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signin page</title>
+    <link rel="stylesheet" href="style_1.css">
+</head>
+<body>
+    <div class="container_1">
+        <div class="image_1">
+            <div class="form-box_1">
+                <div class="form_1">
+                <h2>Login </h2>
+                <div class="input-box_1">
+                    <input type="username" id="username" required>
+                    <label for="">Username</label>
+                </div>     
+                <div class="input-box_1">
+                    <input type="password" id="password" required>
+                    <label for="">Password</label>
+                </div>
+                <div class="group_1">
+                    <a href="#">Forgot Password</a>
+                    <a href="#">Dont have an account?</a>
+                </div>
+                   
+                    <button type="button" onclick="login()">Submit</button>
+                               
+            </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+   
+        function login(){
+            var user = document.getElementById("username").value;
+            var pass = document.getElementById("password").value;
+            
+            if(user=='khushi' && pass=='12345'){
+                window.location.assign("index.html");
+            }
+            else{
+                alert("Invalid Username or Password");
+            }
+        }
+    
+    </script>
+    </html>
+    
+    
+    
+    
